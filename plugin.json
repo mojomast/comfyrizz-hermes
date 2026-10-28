@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "comfyrizz",
+  "version": "0.1.0",
+  "description": "Chat-first Comfyrizz film pipeline. Ships one film skill and one stdio MCP server so Hermes replaces the Comfyrizz web happy path: brief, plan, explicit spend approval, generation, CPU assembly, export, and per-shot retakes.",
+  "author": {
+    "name": "Kyle Durepos",
+    "url": "https://github.com/mojomast"
+  },
+  "homepage": "https://github.com/mojomast/comfyrizz",
+  "repository": "https://github.com/mojomast/comfyrizz-hermes",
+  "license": "MIT",
+  "keywords": [
+    "hermes",
+    "mcp",
+    "film",
+    "video",
+    "storyboard",
+    "comfyui"
+  ]
+}

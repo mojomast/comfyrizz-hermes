@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "comfyrizz": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/mcp/src/index.mjs"
+      ],
+      "cwd": "${PLUGIN_ROOT}",
+      "env": {
+        "COMFYRIZZ_ENGINE_URL": "${COMFYRIZZ_ENGINE_URL}",
+        "COMFYRIZZ_MCP_HTTP": "${COMFYRIZZ_MCP_HTTP}",
+        "COMFYRIZZ_TOKEN": "${COMFYRIZZ_TOKEN}",
+        "OPENCODE_API_KEY": "${OPENCODE_API_KEY}",
+        "OPENCODE_GO_API_KEY": "${OPENCODE_GO_API_KEY}",
+        "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+      }
+    }
+  }
+}

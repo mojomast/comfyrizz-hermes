@@ -1,0 +1,28 @@
+{
+  "name": "@comfyrizz/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Comfyrizz MCP server: chat-as-frontend tools over the local Comfyrizz engine",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "bin": {
+    "comfyrizz-mcp": "./src/index.mjs"
+  },
+  "main": "./src/server.mjs",
+  "exports": {
+    ".": "./src/server.mjs",
+    "./tools": "./src/tools.mjs",
+    "./engine-client": "./src/engine-client.mjs"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node --test test/tools.test.mjs"
+  },
+  "dependencies": {}
+}
